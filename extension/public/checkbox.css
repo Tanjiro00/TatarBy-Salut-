@@ -1,0 +1,40 @@
+.toggle-pill-bw {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .toggle-pill-bw input[type="checkbox"] {
+    display: none;
+  }
+  
+  .toggle-pill-bw input[type="checkbox"] + label {
+    display: block;
+    position: relative;
+    width: 60px; /* Adjusted for better visibility */
+    height: 34px; /* Adjusted for better visibility */
+    background: #ccc;
+    border-radius: 34px;
+    cursor: pointer;
+    transition: background 0.1s ease-in-out;
+  }
+  
+  .toggle-pill-bw input[type="checkbox"] + label:before {
+    content: "";
+    display: block;
+    width: 26px; /* Adjusted for better visibility */
+    height: 26px; /* Adjusted for better visibility */
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    left: 4px;
+    top: 4px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  .toggle-pill-bw input[type="checkbox"]:checked + label {
+    background: #2196F3;
+  }
+  
+  .toggle-pill-bw input[type="checkbox"]:checked + label:before {
+    transform: translateX(26px); /* Adjusted for better visibility */
+  }
