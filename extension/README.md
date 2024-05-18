@@ -1,4 +1,4 @@
-# <img src="public/icons/icon_48.png" width="45" align="left"> Extension
+# <img src="public/icons/icon_48.png" width="45" align="left"> Bombbar Extension
 
 My Chrome Extension
 
