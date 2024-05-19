@@ -14,11 +14,18 @@
       "js": ["contentScript.js"]
     }
   ],
+  "background": {
+    "service_worker": "background.js",
+    "persistent": false
+  },
   "action": {
     "default_popup": "popup.html"
   },
   "permissions": [
     "activeTab",
-    "storage"
+    "storage",
+    "microphone",
+    "tabCapture",
+    "tabs"
   ]
 }
